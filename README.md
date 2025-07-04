@@ -1,25 +1,26 @@
-# Salesforce Projects Portfolio
+# 👋 Hi, I'm Alekya Rapeti
 
-Welcome! This repository contains personal Salesforce projects developed by me to explore and demonstrate my skills in Apex, LWC, Flows, and Experience Cloud.
+I'm a Salesforce Developer with 3.11 years of experience building scalable business applications on the Salesforce platform. I love creating user-friendly, secure, and efficient solutions using Apex, Lightning Web Components (LWC), and declarative tools like Flows.
 
----
+This GitHub is a growing collection of my personal projects, learnings, and experiments — showing my hands-on commitment to learning, building, and sharing.
 
-## 🧾 Project 1: Leave Management System (In Progress)
+## 🚀 Tech Stack
+- 💻 Apex | SOQL | SOSL | Batch & Queueable Apex
+- 🌐 Lightning Web Components (LWC)
+- 🔄 Flows, Process Builder, Approval Processes
+- 🧩 Salesforce Admin + Configuration
+- ☁️ Experience Cloud | REST API | Change Sets
+- 🛠 Git | GitHub | VS Code | SFDX
 
-A simple application where users can apply for leave, and managers can approve or reject it. Built using:
-- Apex
-- Lightning Web Components (LWC)
-- Salesforce Flows
-- Approval Processes
-- Custom Objects
+## 📚 Certifications
 
-### 📌 Features
-- Leave Request Submission via LWC Form
-- Manager Approval & Status Updates
-- Auto Email Notification on Approval/Reject
-- Dashboard & Reports (optional)
+- Salesforce Certified Administrator  
+- Salesforce Certified Platform Developer I  
+- Salesforce JavaScript Developer I  
+- Salesforce Certified Platform App Builder
+- Salesforce Agentforce Specialist
 
-### 🔧 Status
-✅ Planning  
-🔨 Development in progress...  
-🚀 Will publish components and walkthrough soon
+## 📫 Let’s Connect
+
+- 🔗 [LinkedIn](www.linkedin.com/in/alekya-r-5581a6135)
+- ✉️ alekyarapeti@gmail.com  
