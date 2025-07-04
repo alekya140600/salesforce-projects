@@ -20,6 +20,13 @@ This GitHub is a growing collection of my personal projects, learnings, and expe
 - Salesforce Certified Platform App Builder
 - Salesforce Agentforce Specialist
 
+## 📂 Projects
+
+- [Leave Management System](./leave-management)  
+  A full-stack Salesforce mini app using Apex + LWC + Flows.
+
+(More coming soon...)
+
 ## 📫 Let’s Connect
 
 - 🔗 [LinkedIn](www.linkedin.com/in/alekya-r-5581a6135)
