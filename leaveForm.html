@@ -1,0 +1,19 @@
+<template>
+    <lightning-card>
+        <h3 slot="title" title="Leave Request Form"><strong>Leave Request Form</strong></h3>
+        <div class="slds-p-around_medium">
+            <lightning-combobox label="Leave Type" name="leaveType"
+                placeholder="Select Leave Type" options={leaveTypeOptions} onchange={handleChange}>
+            </lightning-combobox>
+            <lightning-input type="date" label="Start Date" name="startDate" 
+                onchange={handleChange}></lightning-input>
+            <lightning-input type="date" label="End Date" name="endDate" 
+                onchange={handleChange}></lightning-input>
+            <lightning-input type="text" label="Reason" name="reason"
+                onchange={handleChange}></lightning-input>
+        </div>
+        <div slot="footer">
+            <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
