@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="My Leaves">
+        <template if:true={hasRecords}>
+            <lightning-datatable 
+                key-field="Id" 
+                data={leaves} 
+                columns={columns}
+                hide-checkbox-column
+                sorted-direction={sortDirection}
+                onsort={handleSorting}
+                sorted-by={fieldToBeSorted}>
+            </lightning-datatable>
+        </template>
+    </lightning-card>
+</template>
