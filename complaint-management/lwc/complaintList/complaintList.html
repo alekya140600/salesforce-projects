@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="My Complaints">
+        <template if:true={hasComplaints}>
+            <lightning-datatable 
+                key-field="Id" 
+                data={complaints} 
+                columns={columns} 
+                hide-checkbox-column
+                sorted-direction={sortDirection} 
+                onsort={handleSorting} 
+                sorted-by={fieldToBeSorted}>
+            </lightning-datatable>
+        </template>
+        <template if:false={hasComplaints}>
+            <p>No Records to Display</p>
+        </template>
+    </lightning-card>
+</template>
