@@ -1,0 +1,13 @@
+<template>
+    <lightning-card title = "Complaint Form">
+        <div class="slds-p-around_medium">
+            <lightning-input label="Subject" type="text" name="subject" value={subject} onchange={handleInputChange}></lightning-input>
+            <lightning-input label="Description" type="text" name="description" value={description} onchange={handleInputChange}></lightning-input>
+            <lightning-combobox label="Category" name="category" options={categories} value={category} onchange={handleInputChange}></lightning-combobox>
+            <lightning-combobox label="Priority" name="priority" options={priorities} value={priority} onchange={handleInputChange}></lightning-combobox>
+        </div>
+        <div slot="footer">
+            <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>    
+</template>
