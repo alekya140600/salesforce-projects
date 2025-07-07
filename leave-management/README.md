@@ -8,9 +8,9 @@ A simple application where users can apply for leave, and managers can approve o
 - Custom Objects
 
 📌 Features
-- Leave Request Submission via LWC Form
-- Manager Approval & Status Updates
-- Auto Email Notification on Approval/Reject
+- Leave Request Submission via LWC Form (Done)
+- Manager Approval & Status Updates (In Progress)
+- Auto Email Notification on Approval/Reject (In Progress)
 - Dashboard & Reports (optional)
 
 🔧 Status
