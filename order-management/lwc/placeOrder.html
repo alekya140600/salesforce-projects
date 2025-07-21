@@ -1,0 +1,47 @@
+<template>
+    <lightning-card>
+        <div class="slds-p-around_medium">
+            <h3 title="OrderDetails"><strong> Order Line Items</strong></h3>
+            <table class="slds-table slds-table_fixed-layout" role="grid">
+                <thead>
+                    <tr class="slds-line-height_reset tableHeader">
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template for:each={numberOfRows} for:item="row">
+                        <tr key={row.id} class="slds-line-height_reset">
+                            <td data-label="productName">
+                                <lightning-input type="text" name="productName" onchange={handleChange} data-id={row.id}></lightning-input>
+                            </td>
+                            <td data-label="quantity">
+                                <lightning-input type="number" name="quantity" onchange={handleChange} data-id={row.id}></lightning-input>
+                            </td>
+                            <td data-label="unitPrice">
+                                <lightning-input type="currency" name="unitPrice" onchange={handleChange} data-id={row.id}></lightning-input>
+                            </td>
+                            <td data-label="total">
+                                <template if:true={row.showTotal}>
+                                    <p>Rs.{row.total}</p>
+                                </template>
+                            </td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+            <br>
+            <button class="slds-button slds-button_brand" onclick={handleAddRow}>Add Row</button>
+            <br>
+            <div class="slds-box slds-p-around_large slds-col slds-size_1-of-4"
+                style="display:flex; position:relative;left:74%">
+                <strong>Total: Rs.{calculateTotal}</strong>
+            </div>
+        </div>
+        <div slot="footer">
+            <lightning-button variant="brand" label="Submit" onclick={handleSubmit}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
